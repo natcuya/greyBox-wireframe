@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description", content="My app quiz idea">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Generic VS Brand: Know your Meds Quiz</title>
+    <script src="index.js"></script>
+    <script src="store.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+      <header class="header">
+      <div class="logo">logo</div>
+      <h1>Generic VS Brand: Know Your Meds Quiz</h1>
+    </header>
+    <main role="main">
+  <!--start page-->
+    <section role="start-quiz">
+      <h2>Test you knowledge on commonly prescribed medications!</h2>
+      <button type="button" class="start-button">Start</button>
+    </section>
+<!--this will present the question number and score-->
+    <section class="questionBox">
+      <ul>
+        <li class="question#-score">Question Number: <span class="question#">0</span>/5
+        </li>
+      </ul>
+<!--Where the question set will go from JS-->
+    <form class="quizSet">
+      <p>The quiz questions and answers choices will be presented within this box</p>
+      <button type="Submit Answer">Submit Answer</button>
+    </form>
+    </section>   
+<!--where the response for each quesiton choice will go-->
+<section class="responseBox">
+    <p>this box will respond based on if it the answer chosen right or wrong
+    </p>
+</section>
+<section class="resultBox">
+    <p>
+        This section will present the final score
+    </p>
+</section>
+</main>
+</body>
+</html>
