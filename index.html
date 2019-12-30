@@ -21,7 +21,7 @@
   <!--start page-->
     <section role="start-quiz">
       <h2>Test you knowledge on commonly prescribed medications!</h2>
-      <button type="button" class="start-button">Start</button>
+      <button type="button" class="start-button">Start Quiz!</button>
     </section>
 <!--this will present the question number and score-->
     <section class="questionBox">
@@ -29,21 +29,72 @@
         <li class="question#-score">Question Number: <span class="question#">0</span>/5
         </li>
       </ul>
-<!--Where the question set will go from JS-->
-    <form class="quizSet">
-      <p>The quiz questions and answers choices will be presented within this box</p>
+<!--Where the question set will go from JS: the questions will be presented on seperate pages-->
+    <div class="quizBox">
+      <p>What is the Generic name of Augmentin?</p>
+      <input name= 'set1' type='radio' 
+      value="a" required> A. Sumatriptan<br></input>
+      <input 
+      name= 'set1' type='radio' value="b" required> B. Amlodipine<br></input>
+      <input name= 'set1'  type='radio' value="c" required> C. Penicillin<br></input>
+      <input name= 'set1'  type='radio' value="d" required> D. Amoxicillin/Clavulanate<br></input>
       <button type="Submit Answer">Submit Answer</button>
-    </form>
+     </div>
+    <div class="quizBox">
+      <p>Which is a common antibiotic?</p>
+      <input name= 'set2' type='radio' value="a" required> A. Zithromax<br></input>
+      <input name= 'set2' type='radio' value="b" required> B. Androgel<br></input>
+      <input name= 'set2'  type='radio' value="c" required> C. Phentermine<br></input>
+      <input name= 'set2'  type='radio' value="d" required> D. Fluoxetine<br></input>
+      <button type="Submit Answer">Submit Answer</button>
+    </div>
+    <div class="quizBox">
+      <p>Which of the following is considered a narcotic drug? </p>
+      <input name= 'set3' type='radio' value="a" required> A. Duragesic <br></input>
+      <input name= 'set3' type='radio' value="b" required> B. Misoprostol<br></input>
+      <input name= 'set3'  type='radio' value="c" required> C. Epinephrine <br></input>
+      <input name= 'set3'  type='radio' value="d" required> D. Prozac<br></input>
+      <button type="Submit Answer">Submit Answer</button>
+    </div>
+    <div class="quizBox">
+      <p>What is the brand name of Sertraline?</p>
+      <input name= 'set4' type='radio' value="a" required> A. Synthroid <br></input>
+      <input name= 'set4' type='radio' value="b" required> B. Lunesta<br></input>
+      <input name= 'set4'  type='radio' value="c" required> C. Zoloft <br></input>
+      <input name= 'set4'  type='radio' value="d" required> D. Zestril<br></input>
+      <button type="Submit Answer">Submit Answer</button>
+    </div>
+     <div class="quizBox">
+      <p>What is Cymbalta used for?</p>
+      <input name= 'set5' type='radio' value="a" required> A. For weight loss <br></input>
+      <input name= 'set5' type='radio' value="b" required> B. As an antibiotic<br></input>
+      <input name= 'set5'  type='radio' value="c" required> C. To treat depression<br></input>
+      <input name= 'set5'  type='radio' value="d" required> D. As a birth control<br></input>
+      <button type="Submit Answer">Submit Answer</button>
+    </div>
     </section>   
 <!--where the response for each quesiton choice will go-->
 <section class="responseBox">
-    <p>this box will respond based on if it the answer chosen right or wrong
+    <p> Oops! That is incorrect. The Answer is: {answer}
     </p>
+    <img class="blank"
+    src="images/blank.png">
+   <button type="button" class="next-button">Next Question</button>
 </section>
+<section class="responseBox">
+    <p> Good Job! You chose the right answer. Keep Going!
+    </p>
+    <img class="wrong"
+    src="images/blank.png">
+   <button type="button" class="next-button">Next Question</button>
+</section>
+<!--This will be the final result page-->
 <section class="resultBox">
     <p>
         This section will present the final score
     </p>
+    <p>Final score is: 3/5 </p>
+    <button type="button" class="try-again-button">Try Again!</button>
 </section>
 </main>
 </body>
