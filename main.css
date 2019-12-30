@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 header {
    margin-top: 20px;
@@ -9,23 +9,16 @@ header {
    font-size: 15px;
    
 }
-
+h1 {
+  text-align: center
+}
 body {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 .questionBox, .resultBox, .responseBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  margin: auto;
   padding: 5px;
   border: 2px grey solid;
-}
-button {
-  height: 20px;
 }
 
 .logo {
@@ -37,4 +30,19 @@ button {
   width:75px;
   text-align: center;
   font-size: 30px;
+}
+img {
+  height:80px;
+  width:80px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  height:30px;
+  width:70px;
+}
+
+.quizBox {
+  border: 2px lightgrey solid;
 }
